@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimalist Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="bg-container">
+        <img src="./images/Frame.svg" class="m-3 pl-5" alt="firefly" />
+
+        <h2 class="heading mt-5">
+          The choice is yours.<br />Because they don't have one.
+        </h2>
+        <button class="quick-view-btn1" onclick="openPopup('popup2')">
+          QUICK VIEW
+        </button>
+      </div>
+      <div class="d-flex flex-row">
+        <img src="/images/Frame (1).svg" />
+        <h4 class="title mt-3 m-5">About</h4>
+        <img src="/images/Frame (1).svg" />
+      </div>
+      <section class="about-section">
+        <div class="d-flex flex-row justify-content-center">
+          <div>
+            <img src="/images/Frame (3).svg" class="about-section-img" />
+          </div>
+          <div>
+            <p class="section-para">
+              Our products are crafted exclusively from the dreams and screams
+              of young kids who wanted to show their mastery in their chosen
+              fields, but were directed towards a factory for daily wages. Each
+              cracker bursts brighter than their lost smiles, and can be heard
+              louder than their cries for miles. Buy them, burst them, brag
+              about them.
+            </p>
+            <h5 class="section-text">
+              The choice is yours. Because they don't have one.
+            </h5>
+          </div>
+          <div>
+            <img src="/images/Frame (3).svg" class="about-section-img" />
+          </div>
+        </div>
+      </section>
+
+      <div class="d-flex flex-row mt-3">
+        <img src="/images/Frame (1).svg" />
+        <h4 class="title mt-3 m-3">Our products</h4>
+        <img src="/images/Frame (1).svg" />
+      </div>
+
+      <section class="products">
+        <div class="product" id="product1">
+          <img src="/images/Frame 7.svg" alt="Raju Rassibomb" class="img" />
+          <div class="card d-flex flex-row">
+            <h4 class="product-title">Raju Rassibomb</h4>
+            <button class="quick-view-btn" onclick="openPopup('popup1')">
+              Quick View
+            </button>
+          </div>
+        </div>
+
+        <div class="product" id="product2">
+          <img
+            src="images/Frame 7.svg"
+            alt="Ladiyon ki Rani Chani"
+            class="img"
+          />
+
+          <div class="card d-flex flex-row">
+            <h4 class="product-title">Ladiyon ki Rani Chani</h4>
+            <button class="quick-view-btn" onclick="openPopup('popup2')">
+              Quick View
+            </button>
+          </div>
+        </div>
+      </section>
+      <img src="images/Frame (2).svg" class="section-bottom-line" />
+
+      <div class="popup" id="popup1">
+        <div class="popup-content m-3 d-flex">
+          <span class="close" onclick="closePopup('popup1')">&times;</span>
+          <img src="/images/Frame 7.svg" alt="Raju Rassibomb" class="img1" />
+          <div class="d-flex flex-column justify-content-start m-3">
+            <h3>Raju Rassibomb</h3>
+            <p>
+              MRP:<br />
+              Raju's Dreams/-
+            </p>
+            <p>
+              Product Description: <br />
+              This product packs an extra punch, Thanks to the blood, sweat, and
+              tears of a young one.
+            </p>
+            <p>
+              Product Content:<br />
+              - 10 hand-hurting pieces of rassi bombs<br />
+              - Raju's hopes
+            </p>
+            <button class="quick-view-btn">Choose Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="/images/Frame 64.svg " class="footer-section-line" />
+    <div class="footer-section mt-4">
+      <div>
+        <img src="images/Frame 62.svg" class="p-3" />
+      </div>
+      <div>
+        <h4 class="p-3 mt-8 footer-section-heading">Follow us on</h4>
+        <div class="d-flex flex-row justify-content-center social-icons">
+          <a href="#">
+            <img src="/images/001-instagram.svg" alt="instagram" />
+          </a>
+          <a href="#">
+            <img src="/images/002-youtube.svg" alt="youtube" />
+          </a>
+          <a href="#">
+            <img src="/images/003-twitter.svg" alt="twitter" />
+          </a>
+          <a href="#">
+            <img src="/images/004-facebook.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="/images/005-linkedin.svg" alt="linkedin" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <img src="images/Frame 62.svg" class="p-3" />
+      </div>
+    </div>
+    <img src="/images/Frame 64.svg" class="footer-section-line" />
+    <script src="script.js"></script>
+  </body>
+</html>
